@@ -10,8 +10,38 @@
     "packages/*"
   ],
   "scripts": {
+    "app": "yarn workspace @aosm/app",
     "audit:security": "yarn npm audit",
     "audit:licenses": "yarn licenses audit --summary --config=./licenses.config.js",
-    "audit": "yarn audit:licenses && yarn audit:security"
+    "audit": "yarn audit:licenses && yarn audit:security",
+    "jest": "jest --config ./tooling/jest/jest.config.js",
+    "test": "yarn jest"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "recoil": "0.5.2",
+    "test-utils": "link:./tooling/test-utils"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "@babel/preset-react": "7.16.0",
+    "@tailwindcss/aspect-ratio": "0.3.0",
+    "@tailwindcss/forms": "0.3.4",
+    "@tailwindcss/typography": "0.4.1",
+    "@testing-library/react": "12.1.2",
+    "autoprefixer": "10.4.0",
+    "babel-jest": "27.4.2",
+    "caller-dir": "1.0.4",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "27.4.3",
+    "jest-cli": "27.4.3",
+    "postcss": "8.4.4",
+    "prettier": "2.5.1",
+    "tailwindcss": "2.2.19",
+    "tailwindcss-children": "2.1.0",
+    "tailwindcss-debug-screens": "2.2.0",
+    "vite-jest": "0.0.4"
   }
 }

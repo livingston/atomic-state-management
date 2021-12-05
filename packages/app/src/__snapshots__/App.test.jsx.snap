@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render the component 1`] = `
+<div>
+  <header>
+    <nav
+      class="bg-gray-800 shadow"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          class="flex items-center justify-between h-16"
+        >
+          <div
+            class="flex items-center"
+          >
+            <div
+              class="flex-shrink-0"
+            />
+          </div>
+          <div
+            class="hidden md:block"
+          >
+            <div
+              class="ml-10 flex items-baseline space-x-4"
+            />
+          </div>
+        </div>
+        <div
+          class="flex items-center"
+        />
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div
+      class="max-w-7xl mx-auto px-4 py-6 sm:px-0"
+    >
+      <div
+        class="border-1 border-gray-400 rounded-lg px-10 py-10 bg-gray-100 shadow"
+      />
+    </div>
+  </main>
+</div>
+`;

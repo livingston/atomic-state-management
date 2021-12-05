@@ -17,6 +17,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@aosm/auth@workspace:packages/auth":
+  version: 0.0.0-use.local
+  resolution: "@aosm/auth@workspace:packages/auth"
+  dependencies:
+    "@testing-library/react": "*"
+    react: "*"
+    react-dom: "*"
+    recoil: 0.5.2
+    test-utils: "link:../../tooling/test-utils"
+  languageName: unknown
+  linkType: soft
+
 "@aosm/common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@aosm/common@workspace:packages/common"
@@ -5994,6 +6006,12 @@ __metadata:
   checksum: 3b34a3d77165a2cb82b34014b3aba93b1c4637a5011807557dc2f3da826c59975a5ccad765721c4648b39817e3472789f9b0fa98fc854c5c1c7a1e632aacdc28
   languageName: node
   linkType: hard
+
+"test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fauth%40workspace%3Apackages%2Fauth":
+  version: 0.0.0-use.local
+  resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fauth%40workspace%3Apackages%2Fauth"
+  languageName: node
+  linkType: soft
 
 "test-utils@link:./tooling/test-utils::locator=atomic-state-management%40workspace%3A.":
   version: 0.0.0-use.local

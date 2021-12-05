@@ -1,0 +1,13 @@
+{
+  "name": "@aosm/auth",
+  "version": "0.0.0",
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "recoil": "*"
+  },
+  "devDependencies": {
+    "@testing-library/react": "*",
+    "test-utils": "link:../../tooling/test-utils"
+  }
+}

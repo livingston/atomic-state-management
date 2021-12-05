@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "arcanis.vscode-zipfs",
+    "bradlc.vscode-tailwindcss",
+    "heybourn.headwind",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "aaron-bond.better-comments",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "team-sapling.sapling",
+    "CoenraadS.bracket-pair-colorizer"
+  ]
+}

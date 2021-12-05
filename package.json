@@ -1,0 +1,17 @@
+{
+  "name": "atomic-state-management",
+  "packageManager": "yarn@3.1.1",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">16.13.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "audit:security": "yarn npm audit",
+    "audit:licenses": "yarn licenses audit --summary --config=./licenses.config.js",
+    "audit": "yarn audit:licenses && yarn audit:security"
+  }
+}

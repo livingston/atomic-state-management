@@ -17,6 +17,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@aosm/common@workspace:packages/common":
+  version: 0.0.0-use.local
+  resolution: "@aosm/common@workspace:packages/common"
+  dependencies:
+    "@testing-library/react": "*"
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.10.4, @babel/code-frame@npm:^7.12.13, @babel/code-frame@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/code-frame@npm:7.16.0"

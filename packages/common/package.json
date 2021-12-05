@@ -1,0 +1,12 @@
+{
+  "name": "@aosm/common",
+  "version": "0.0.0",
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@testing-library/react": "*"
+  },
+  "exports": {}
+}

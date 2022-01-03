@@ -6,7 +6,9 @@
     "react-dom": "*"
   },
   "devDependencies": {
-    "@testing-library/react": "*"
+    "@testing-library/react": "*",
+    "test-utils": "link:../../tooling/test-utils",
+    "tooling": "link:../../tooling"
   },
   "exports": {}
 }

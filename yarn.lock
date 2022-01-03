@@ -13,6 +13,8 @@ __metadata:
     "@vitejs/plugin-react": 1.1.0
     react: "*"
     react-dom: "*"
+    test-utils: "link:../../tooling/test-utils"
+    tooling: "link:../../tooling"
     vite: 2.6.14
   languageName: unknown
   linkType: soft
@@ -24,8 +26,9 @@ __metadata:
     "@testing-library/react": "*"
     react: "*"
     react-dom: "*"
-    recoil: 0.5.2
+    recoil: "*"
     test-utils: "link:../../tooling/test-utils"
+    tooling: "link:../../tooling"
   languageName: unknown
   linkType: soft
 
@@ -36,6 +39,8 @@ __metadata:
     "@testing-library/react": "*"
     react: "*"
     react-dom: "*"
+    test-utils: "link:../../tooling/test-utils"
+    tooling: "link:../../tooling"
   languageName: unknown
   linkType: soft
 
@@ -5374,7 +5379,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recoil@npm:0.5.2":
+"recoil@npm:*, recoil@npm:0.5.2":
   version: 0.5.2
   resolution: "recoil@npm:0.5.2"
   dependencies:
@@ -6007,9 +6012,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fapp%40workspace%3Apackages%2Fapp":
+  version: 0.0.0-use.local
+  resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fapp%40workspace%3Apackages%2Fapp"
+  languageName: node
+  linkType: soft
+
 "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fauth%40workspace%3Apackages%2Fauth":
   version: 0.0.0-use.local
   resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fauth%40workspace%3Apackages%2Fauth"
+  languageName: node
+  linkType: soft
+
+"test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon":
+  version: 0.0.0-use.local
+  resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon"
   languageName: node
   linkType: soft
 
@@ -6057,6 +6074,24 @@ __metadata:
   checksum: f76fa01b3d5be85db6a2a143e24df9f60dd047d151062d0ba3df62953f2f697b16fe5dad9b0ac6191c7efc7b1d9dcaa4b768174b7b29da89d4428e64bc0a20ed
   languageName: node
   linkType: hard
+
+"tooling@link:../../tooling::locator=%40aosm%2Fapp%40workspace%3Apackages%2Fapp":
+  version: 0.0.0-use.local
+  resolution: "tooling@link:../../tooling::locator=%40aosm%2Fapp%40workspace%3Apackages%2Fapp"
+  languageName: node
+  linkType: soft
+
+"tooling@link:../../tooling::locator=%40aosm%2Fauth%40workspace%3Apackages%2Fauth":
+  version: 0.0.0-use.local
+  resolution: "tooling@link:../../tooling::locator=%40aosm%2Fauth%40workspace%3Apackages%2Fauth"
+  languageName: node
+  linkType: soft
+
+"tooling@link:../../tooling::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon":
+  version: 0.0.0-use.local
+  resolution: "tooling@link:../../tooling::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon"
+  languageName: node
+  linkType: soft
 
 "tough-cookie@npm:^4.0.0":
   version: 4.0.0

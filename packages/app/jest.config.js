@@ -1,7 +1,10 @@
-const sharedConfig = require('../../tooling/jest/jest.config.shared');
+const sharedConfig = require('tooling/jest/jest.config.shared');
 
 module.exports = {
   ...sharedConfig({
-    color: 'yellow'
+    color: 'yellow',
+    coveragePathIgnorePatterns: [
+      './src/main.jsx',
+    ]
   })
 };

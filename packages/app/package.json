@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
     "react": "*",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "@testing-library/react": "*",
     "@vitejs/plugin-react": "1.1.0",
+    "test-utils": "link:../../tooling/test-utils",
+    "tooling": "link:../../tooling",
     "vite": "2.6.14"
   }
 }

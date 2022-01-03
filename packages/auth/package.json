@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "*",
-    "test-utils": "link:../../tooling/test-utils"
+    "test-utils": "link:../../tooling/test-utils",
+    "tooling": "link:../../tooling"
   }
 }

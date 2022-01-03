@@ -12,5 +12,7 @@ module.exports = (config, context = getCallerDir()) => {
       name: pkgJSON.name,
       color: config.color
     },
+
+    coveragePathIgnorePatterns: config.coveragePathIgnorePatterns || [],
   };
 };

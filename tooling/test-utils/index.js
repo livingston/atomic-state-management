@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { snapshot_UNSTABLE, useRecoilValue } from 'recoil';
 
-export const snapshot = snapshot_UNSTABLE;
+export const recoilSnapshot = snapshot_UNSTABLE;
 
 
 export const RecoilObserver = ({node , onChange}) => {

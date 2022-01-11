@@ -10,5 +10,8 @@
     "test-utils": "link:../../tooling/test-utils",
     "tooling": "link:../../tooling"
   },
-  "exports": {}
+  "exports": {
+    "./RenderCounter": "./src/RenderCounter.jsx",
+    "./utils": "./src/utils.js"
+  }
 }

@@ -2114,6 +2114,7 @@ __metadata:
     identity-obj-proxy: 3.0.0
     jest: 27.4.3
     jest-cli: 27.4.3
+    jotai: 1.5.1
     postcss: 8.4.4
     prettier: 2.5.1
     react: 17.0.2
@@ -2123,7 +2124,7 @@ __metadata:
     tailwindcss-children: 2.1.0
     tailwindcss-debug-screens: 2.2.0
     test-utils: "link:./tooling/test-utils"
-    vite-jest: 0.0.4
+    vite-jest: 0.1.4
   languageName: unknown
   linkType: soft
 
@@ -4370,6 +4371,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jotai@npm:1.5.1":
+  version: 1.5.1
+  resolution: "jotai@npm:1.5.1"
+  peerDependencies:
+    "@babel/core": "*"
+    "@babel/template": "*"
+    "@urql/core": "*"
+    immer: "*"
+    optics-ts: "*"
+    react: ">=16.8"
+    react-query: "*"
+    valtio: "*"
+    wonka: "*"
+    xstate: "*"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@babel/template":
+      optional: true
+    "@urql/core":
+      optional: true
+    immer:
+      optional: true
+    optics-ts:
+      optional: true
+    react-query:
+      optional: true
+    valtio:
+      optional: true
+    wonka:
+      optional: true
+    xstate:
+      optional: true
+  checksum: e40155079ed21fe35a26986e35767f09694b0de3c7d75d0a4c0f56657afedfdc24ec2daaecbe3b75f99bc9236da0c773333934f793e0d9d8a25bf9a25ad0558c
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -6226,9 +6264,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-jest@npm:0.0.4":
-  version: 0.0.4
-  resolution: "vite-jest@npm:0.0.4"
+"vite-jest@npm:0.1.4":
+  version: 0.1.4
+  resolution: "vite-jest@npm:0.1.4"
   dependencies:
     es-module-lexer: ^0.6.0
     execa: ^5.1.1
@@ -6240,7 +6278,7 @@ __metadata:
     vite: ^2.4.2
   bin:
     vite-jest: bin/vite-jest.js
-  checksum: 7c5b87fae098254c7e782eb6ec11fde69233253ba9c8e2c25ad7356af87f1c6fcae84658105fcff8ac936fd64226b8f78c6923504d2c33b1db5ac8716049cd8d
+  checksum: 5f994aec2d28f3192d3265a4a3d67647238a731056302f88f4bdf9dc46425c2e2a0546020aada028c51956209a3c64d6aee1acc5a8284909a41e01d0f8246595
   languageName: node
   linkType: hard
 

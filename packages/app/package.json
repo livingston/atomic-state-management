@@ -8,14 +8,20 @@
     "test": "echo \"Run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@aosm/cart": "workspace:packages/cart",
+    "@aosm/common": "workspace:packages/common",
+    "@aosm/products": "workspace:packages/products",
+    "@heroicons/react": "1.0.5",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "react-router-dom": "6.2.1",
+    "recoil": "*"
   },
   "devDependencies": {
     "@testing-library/react": "*",
     "@vitejs/plugin-react": "1.1.0",
     "test-utils": "link:../../tooling/test-utils",
     "tooling": "link:../../tooling",
-    "vite": "2.6.14"
+    "vite": "*"
   }
 }

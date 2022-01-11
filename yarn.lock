@@ -9,13 +9,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aosm/app@workspace:packages/app"
   dependencies:
+    "@aosm/cart": "workspace:packages/cart"
+    "@aosm/common": "workspace:packages/common"
+    "@aosm/products": "workspace:packages/products"
+    "@heroicons/react": 1.0.5
     "@testing-library/react": "*"
     "@vitejs/plugin-react": 1.1.0
     react: "*"
     react-dom: "*"
+    react-router-dom: 6.2.1
+    recoil: "*"
     test-utils: "link:../../tooling/test-utils"
     tooling: "link:../../tooling"
-    vite: 2.6.14
+    vite: "*"
   languageName: unknown
   linkType: soft
 
@@ -32,6 +38,29 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@aosm/cart@workspace:packages/cart":
+  version: 0.0.0-use.local
+  resolution: "@aosm/cart@workspace:packages/cart"
+  dependencies:
+    "@aosm/common": "workspace:packages/common"
+    "@aosm/products": "workspace:packages/products"
+    "@testing-library/react": "*"
+    immer: "*"
+    react: "*"
+    react-dom: "*"
+    react-router-dom: "*"
+    recoil: "*"
+    test-utils: "link:../../tooling/test-utils"
+    tooling: "link:../../tooling"
+  peerDependencies:
+    immer: "*"
+    react: "*"
+    react-dom: "*"
+    react-router-dom: "*"
+    recoil: "*"
+  languageName: unknown
+  linkType: soft
+
 "@aosm/common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@aosm/common@workspace:packages/common"
@@ -41,6 +70,30 @@ __metadata:
     react-dom: "*"
     test-utils: "link:../../tooling/test-utils"
     tooling: "link:../../tooling"
+  languageName: unknown
+  linkType: soft
+
+"@aosm/products@workspace:packages/products":
+  version: 0.0.0-use.local
+  resolution: "@aosm/products@workspace:packages/products"
+  dependencies:
+    "@aosm/cart": "workspace:packages/cart"
+    "@aosm/common": "workspace:packages/common"
+    "@heroicons/react": 1.0.5
+    "@testing-library/react": "*"
+    immer: "*"
+    react: "*"
+    react-dom: "*"
+    react-router-dom: "*"
+    recoil: "*"
+    test-utils: "link:../../tooling/test-utils"
+    tooling: "link:../../tooling"
+  peerDependencies:
+    immer: "*"
+    react: "*"
+    react-dom: "*"
+    react-router-dom: "*"
+    recoil: "*"
   languageName: unknown
   linkType: soft
 
@@ -1349,6 +1402,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.7.6":
+  version: 7.16.7
+  resolution: "@babel/runtime@npm:7.16.7"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 47912f0aaacd1cab2e2552aaf3e6eaffbcaf2d5ac9b07a89a12ac0d42029cb92c070b0d16f825e4277c4a34677c54d8ffe85e1f7c6feb57de58f700eec67ce2f
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.16.0, @babel/template@npm:^7.3.3":
   version: 7.16.0
   resolution: "@babel/template@npm:7.16.0"
@@ -1398,6 +1460,15 @@ __metadata:
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
   checksum: d05081e0887a49c178b75ee3067bd6ee086f73c154d121b854fb2e044e8a89cb1cbb6de3a0dd93a519b80f0531fda68b099dd7256205f7fbb3490324342f2217
+  languageName: node
+  linkType: hard
+
+"@heroicons/react@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@heroicons/react@npm:1.0.5"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 12114af19c17f69140cc7338e4cd12fe38098ad3ed79f02762106160655cde3ebdba58a2b26f1067f720786187364fd9465bc72f02aad85b0ead8172d76aa51d
   languageName: node
   linkType: hard
 
@@ -2112,6 +2183,7 @@ __metadata:
     babel-jest: 27.4.2
     caller-dir: 1.0.4
     identity-obj-proxy: 3.0.0
+    immer: 9.0.7
     jest: 27.4.3
     jest-cli: 27.4.3
     jotai: 1.5.1
@@ -2124,6 +2196,7 @@ __metadata:
     tailwindcss-children: 2.1.0
     tailwindcss-debug-screens: 2.2.0
     test-utils: "link:./tooling/test-utils"
+    vite: 2.7.10
     vite-jest: 0.1.4
   languageName: unknown
   linkType: soft
@@ -3028,7 +3101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.13.2":
+"esbuild@npm:^0.13.12":
   version: 0.13.15
   resolution: "esbuild@npm:0.13.15"
   dependencies:
@@ -3494,6 +3567,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"history@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "history@npm:5.2.0"
+  dependencies:
+    "@babel/runtime": ^7.7.6
+  checksum: 2c6a05aa86793e0a0857013457f34474c17f81a012c6bdb00bf30862389ac6a8c2df113d82176f67af2fd534ea9dc4e1218470c5526355b6fc1aefcc971f2eb2
+  languageName: node
+  linkType: hard
+
 "hsl-regex@npm:^1.0.0":
   version: 1.0.0
   resolution: "hsl-regex@npm:1.0.0"
@@ -3599,6 +3681,13 @@ __metadata:
   dependencies:
     harmony-reflect: ^1.4.6
   checksum: 97559f8ea2aeaa1a880d279d8c49550dce01148321e00a2102cda5ddf9ce622fa1d7f3efc7bed63458af78889de888fdaebaf31c816312298bb3fdd0ef8aaf2c
+  languageName: node
+  linkType: hard
+
+"immer@npm:*, immer@npm:9.0.7":
+  version: 9.0.7
+  resolution: "immer@npm:9.0.7"
+  checksum: 3655ad64bf5ab5adf2854f7d2a9ad543f2cd995fcd169b6f10294f41fdb2cbcbd44d8beaa3e01b3c0b6149001190e57f6ab2cd735e6a929780b7462f2e973c9b
   languageName: node
   linkType: hard
 
@@ -5245,7 +5334,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.4, postcss@npm:^8.1.6, postcss@npm:^8.3.5, postcss@npm:^8.3.8":
+"postcss@npm:8.4.4, postcss@npm:^8.1.6, postcss@npm:^8.3.5":
   version: 8.4.4
   resolution: "postcss@npm:8.4.4"
   dependencies:
@@ -5253,6 +5342,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.1
   checksum: 6cf3fe0ecdf5a0d2aeb5e8404938c7eab968704e2e29dc5421e90b4014eb1975c1c0ad828425f2428807ef6e3fcfadd71f988ab55cb06c28ac2866f22403255b
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.5":
+  version: 8.4.5
+  resolution: "postcss@npm:8.4.5"
+  dependencies:
+    nanoid: ^3.1.30
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.1
+  checksum: b78abdd89c10f7b48f4bdcd376104a19d6e9c7495ab521729bdb3df315af6c211360e9f06887ad3bc0ab0f61a04b91d68ea11462997c79cced58b9ccd66fac07
   languageName: node
   linkType: hard
 
@@ -5384,6 +5484,30 @@ __metadata:
   version: 0.11.0
   resolution: "react-refresh@npm:0.11.0"
   checksum: 112178a05b1e0ffeaf5d9fb4e56b4410a34a73adeb04dbf13abdc50d9ac9df2ada83e81485156cca0b3fa296aa3612751b3d6cd13be4464642a43679b819cbc7
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:*, react-router-dom@npm:6.2.1":
+  version: 6.2.1
+  resolution: "react-router-dom@npm:6.2.1"
+  dependencies:
+    history: ^5.2.0
+    react-router: 6.2.1
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: fa0edc69fddf0cb1313bcb3dbd5eb2b2ff24a75ee03ba928995e16a6a251585750f91d966612e868eb68a5aebc4a5240be40fd96c4acf1d8d48d33f54ad3f4e2
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.2.1":
+  version: 6.2.1
+  resolution: "react-router@npm:6.2.1"
+  dependencies:
+    history: ^5.2.0
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 081a89237ab4f32195d1f2173bc4b3d95637cd6942a4d1a9e90d4ac8c80faa95528255ca2ec44c1e88c1b369e712c4ca74cba5ae3acef6fc30a51a62805b95a4
   languageName: node
   linkType: hard
 
@@ -5603,9 +5727,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.57.0":
-  version: 2.60.2
-  resolution: "rollup@npm:2.60.2"
+"rollup@npm:^2.59.0":
+  version: 2.63.0
+  resolution: "rollup@npm:2.63.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -5613,7 +5737,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: bcd41dfe8afb7e0d97ce2237752165bdda689bcce6321d96821d565de3e0c865a49b544923f315985be2bfde086f72b54aae4ae7c87f798b3cb9558a5bec4e65
+  checksum: 23db16ea9d222ad5ae9620ba51d4f45c834927038c1e43d87f7dd3d240aa54422e51c2660437479af4b771e13f9529df236a3d43a3b9f4229bf241347d5f2c8f
   languageName: node
   linkType: hard
 
@@ -6062,9 +6186,21 @@ __metadata:
   languageName: node
   linkType: soft
 
+"test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fcart%40workspace%3Apackages%2Fcart":
+  version: 0.0.0-use.local
+  resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fcart%40workspace%3Apackages%2Fcart"
+  languageName: node
+  linkType: soft
+
 "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon":
   version: 0.0.0-use.local
   resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon"
+  languageName: node
+  linkType: soft
+
+"test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fproducts%40workspace%3Apackages%2Fproducts":
+  version: 0.0.0-use.local
+  resolution: "test-utils@link:../../tooling/test-utils::locator=%40aosm%2Fproducts%40workspace%3Apackages%2Fproducts"
   languageName: node
   linkType: soft
 
@@ -6125,9 +6261,21 @@ __metadata:
   languageName: node
   linkType: soft
 
+"tooling@link:../../tooling::locator=%40aosm%2Fcart%40workspace%3Apackages%2Fcart":
+  version: 0.0.0-use.local
+  resolution: "tooling@link:../../tooling::locator=%40aosm%2Fcart%40workspace%3Apackages%2Fcart"
+  languageName: node
+  linkType: soft
+
 "tooling@link:../../tooling::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon":
   version: 0.0.0-use.local
   resolution: "tooling@link:../../tooling::locator=%40aosm%2Fcommon%40workspace%3Apackages%2Fcommon"
+  languageName: node
+  linkType: soft
+
+"tooling@link:../../tooling::locator=%40aosm%2Fproducts%40workspace%3Apackages%2Fproducts":
+  version: 0.0.0-use.local
+  resolution: "tooling@link:../../tooling::locator=%40aosm%2Fproducts%40workspace%3Apackages%2Fproducts"
   languageName: node
   linkType: soft
 
@@ -6282,15 +6430,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:2.6.14":
-  version: 2.6.14
-  resolution: "vite@npm:2.6.14"
+"vite@npm:*, vite@npm:2.7.10":
+  version: 2.7.10
+  resolution: "vite@npm:2.7.10"
   dependencies:
-    esbuild: ^0.13.2
+    esbuild: ^0.13.12
     fsevents: ~2.3.2
-    postcss: ^8.3.8
+    postcss: ^8.4.5
     resolve: ^1.20.0
-    rollup: ^2.57.0
+    rollup: ^2.59.0
   peerDependencies:
     less: "*"
     sass: "*"
@@ -6307,7 +6455,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 4bf2b7407771440de81546932cf0b1bd74f9254e6056665a596b9310f37b2d34a65728a2a0525300ef48fa1f3e2ec5a3366326eecf31db7b86c19463e22186a8
+  checksum: 1757108547ca34bd01a8ee3973cb04b484492c9e5690fc75f54bbcbde5965ab6e0a5b8355c336adf0a9117aa0fdae3053af3aafa9e5eb783282fffa948cfbe11
   languageName: node
   linkType: hard
 

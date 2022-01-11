@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 import { LoginIcon } from '@heroicons/react/outline';
 import HeaderCart from '@aosm/cart/Header';
 
+import beaker from  './assets/beaker.svg'
+
 const HeaderLink = ({ to, children }) => (
   <NavLink
     to={to}
@@ -25,7 +27,7 @@ const Header = () => (
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img className="h-8 w-8" src="/src/assets/beaker.svg" alt="Lab" />
+              <img className="h-8 w-8" src={beaker} alt="Lab" />
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">

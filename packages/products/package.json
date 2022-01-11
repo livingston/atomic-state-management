@@ -1,0 +1,30 @@
+{
+  "name": "@aosm/products",
+  "version": "0.0.0",
+  "exports": {
+    "./ProductListing": "./src/ProductListing.jsx",
+    "./productState": "./src/productState.js"
+  },
+  "devDependencies": {
+    "@aosm/cart": "workspace:packages/cart",
+    "@aosm/common": "workspace:packages/common",
+    "@testing-library/react": "*",
+    "immer": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "recoil": "*",
+    "test-utils": "link:../../tooling/test-utils",
+    "tooling": "link:../../tooling"
+  },
+  "peerDependencies": {
+    "immer": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "recoil": "*"
+  },
+  "dependencies": {
+    "@heroicons/react": "1.0.5"
+  }
+}

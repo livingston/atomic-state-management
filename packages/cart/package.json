@@ -1,0 +1,28 @@
+{
+  "name": "@aosm/cart",
+  "version": "0.0.0",
+  "exports": {
+    "./Header": "./src/HeaderCart.jsx",
+    "./cartState": "./src/cartState.js",
+    "./Cart": "./src/Cart.jsx"
+  },
+  "devDependencies": {
+    "@aosm/common": "workspace:packages/common",
+    "@aosm/products": "workspace:packages/products",
+    "@testing-library/react": "*",
+    "immer": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "recoil": "*",
+    "test-utils": "link:../../tooling/test-utils",
+    "tooling": "link:../../tooling"
+  },
+  "peerDependencies": {
+    "immer": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "recoil": "*"
+  }
+}

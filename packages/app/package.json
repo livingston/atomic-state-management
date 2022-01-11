@@ -18,8 +18,16 @@
     "recoil": "*"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "*",
+    "@tailwindcss/forms": "*",
+    "@tailwindcss/typography": "*",
     "@testing-library/react": "*",
     "@vitejs/plugin-react": "1.1.0",
+    "autoprefixer": "*",
+    "postcss": "*",
+    "tailwindcss": "*",
+    "tailwindcss-children": "*",
+    "tailwindcss-debug-screens": "*",
     "test-utils": "link:../../tooling/test-utils",
     "tooling": "link:../../tooling",
     "vite": "*"

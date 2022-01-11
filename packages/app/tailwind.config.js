@@ -1,4 +1,4 @@
-const baseConfig = require('../../tooling/tailwind.config.base');
+const baseConfig = require('tooling/tailwind.config.base');
 
 module.exports = {
   ...baseConfig

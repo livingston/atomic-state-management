@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "engines": {
-    "node": ">16.13.0"
+    "node": ">=14"
   },
   "workspaces": [
     "packages/*"
